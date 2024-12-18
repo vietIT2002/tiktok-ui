@@ -1,5 +1,7 @@
+import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routes';
+import DefaultLayout from './components/Layout/DefaultLayout'; // Đảm bảo đường dẫn đúng
 
 function App() {
   return (
@@ -7,8 +9,20 @@ function App() {
       <div className="App">
         <Routes>
           {publicRoutes.map((route, index) => {
-            const Page = route.component; 
-            return <Route key={index} path={route.path} element={<Page />} />;
+            const Page = route.component;
+            const Layout = route.layout === null ? Fragment : route.layout || DefaultLayout;
+
+            return (
+              <Route
+                key={index}
+                path={route.path}
+                element={
+                  <Layout>
+                    <Page />
+                  </Layout>
+                }
+              />
+            );
           })}
         </Routes>
       </div>
@@ -17,4 +31,3 @@ function App() {
 }
 
 export default App;
-
