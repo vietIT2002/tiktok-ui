@@ -1,0 +1,100 @@
+//sidebar
+.Sidebar {
+    display: grid;
+    gap: 26px;
+}
+// Logo tiktok
+.logo {
+    width: 120px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo svg {
+    width: 130px;
+    height: 43px;
+}
+
+// search
+.search {
+    width: 202px;
+    height: 42px;
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: adjust-hue($color: #ebe9e9, $degrees: 0);
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px 0 0 20px;
+    padding-left: 15px;
+}
+
+input {
+    flex-basis: 70%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: adjust-hue($color: #ebe9e9, $degrees: 0);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+// Sidebar-Navigation
+.Main-Sidebar-Navigation{
+    gap: 0;
+}
+
+.Sidebar-Navigation {
+    display: flex;
+    gap: 16px;
+    width: 245px;
+    text-align: center;
+    line-height: 22px; 
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.Sidebar-Navigation:hover{
+    cursor: pointer;
+    background-color: #ebe9e9;
+}
+
+.Icon-Navigation svg {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px; 
+}
+
+.Text-Navigation p {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 18px; 
+}
+
+
+.add-menu {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}

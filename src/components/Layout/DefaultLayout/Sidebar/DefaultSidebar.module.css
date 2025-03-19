@@ -1,0 +1,53 @@
+.Sidebar {
+  display: -ms-grid;
+  display: grid;
+  gap: 24px;
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.logo svg {
+  width: 120px;
+  height: 30px;
+}
+
+.search {
+  width: 204px;
+  height: 40px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+.search .search-btn {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #ebe9e9;
+}
+/*# sourceMappingURL=DefaultSidebar.module.css.map */
